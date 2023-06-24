@@ -9,7 +9,7 @@ const Doc = require('../models/Doc');
 // GET user by ID
 router.get("/:id", asyncHandler(async (req, res) => {
 	try {
-		const user = await User.findById({ username: req.params.id });
+		const user = await User.findById(req.params.id);
 		!user && res.status(404).json("User not found");
 		const { password, ...others } = user._doc;
 		res.status(200).json(others);
