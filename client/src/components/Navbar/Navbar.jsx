@@ -1,11 +1,11 @@
+import "./navbar.css";
+
+import { Context } from "../../context/Context";
+
 import { useState, useEffect, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 const generateUniqueId = require("generate-unique-id");
-
-import { Context } from "../../context/Context";
-
-import "./navbar.css";
 
 function Navbar(props) {
   const { user, dispatch } = useContext(Context);
