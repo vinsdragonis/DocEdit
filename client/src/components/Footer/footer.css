@@ -1,0 +1,15 @@
+.footer {
+  margin-bottom: 2%;
+  margin-left: 5%;
+  position: absolute;
+  /* left: 5%; */
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: var(--font-color);
+}

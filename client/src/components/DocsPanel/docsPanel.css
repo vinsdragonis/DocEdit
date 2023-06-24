@@ -1,0 +1,75 @@
+.docs-panel {
+  width: 100%;
+  max-height: 100vh;
+  padding: 5% 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://wallpapercave.com/wp/wp12013395.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.docs-panel-container {
+  width: 80%;
+  height: 100%;
+  min-height: 60vh;
+  padding: 3%;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  background: var(--docs-panel-container-color);
+  box-shadow: 0 0 10px 2px var(--docs-panel-container-shadow) inset;
+}
+
+.doc-err-msg {
+  margin: 5px;
+  font-size: 24px;
+  color: var(--font-color);
+  background: var(--load-more-btn-color);
+}
+
+.dashboard-my-docs {
+  margin: 125px 0 30px;
+  display: inline-flex;
+  color: var(--font-color);
+}
+
+.load-more-btn {
+  width: 125px;
+  height: 75px;
+  margin: 30px;
+  padding: 10px;
+  background: var(--load-more-btn-color);
+  color: var(--font-dark-color);
+  box-shadow: 1px 2px 3px 1px var(--docs-panel-container-shadow);
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.load-more-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 868px) {
+  .docs-panel {
+    padding: 5% 10%;
+  }
+  .docs-panel-container {
+    width: 90%;
+    justify-content: center;
+  }
+  .dashboard-my-docs {
+    margin: 70px 0 30px;
+  }
+}

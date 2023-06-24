@@ -1,0 +1,41 @@
+.doc-card-wrapper {
+  min-width: 200px;
+  max-width: 200px;
+  height: 150px;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--docs-card-color);
+  box-shadow: 1px 2px 3px 1px var(--docs-panel-container-shadow);
+  color: var(--font-color);
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.doc-card-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.doc-card-wrapper h2 .doc-link,
+.doc-card-wrapper span {
+  margin: 10px;
+}
+
+.doc-card-wrapper h2 .doc-link {
+  color: var(--font-color);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.doc-card-wrapper span {
+  font-size: 12px;
+}
+
+.doc-card-wrapper .doc-card-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

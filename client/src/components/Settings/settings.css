@@ -1,0 +1,207 @@
+.settings-form-wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://wallpapercave.com/wp/wp11368618.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settings-form-wrapper .settings-form {
+  width: 50%;
+  min-height: 85vh;
+  margin: 10% 0 5%;
+  padding: 0% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: var(--form-color); */
+  background: rgba(6, 0, 170, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(6, 0, 170, 0.3);
+  border-radius: 20px;
+}
+
+.settings-form-wrapper .settings-form .error-msg {
+  margin-bottom: 2%;
+  padding: 10px;
+  color: var(--font-color);
+  font-size: 14px;
+}
+
+.settings-form-wrapper .settings-form .form-label {
+  visibility: hidden;
+}
+
+.settings-form-wrapper .settings-form h1 {
+  margin-bottom: 2%;
+  padding: 10px;
+  color: var(--font-color);
+  font-size: 36px;
+  border-bottom: 5px solid var(--font-color);
+}
+
+.settings-form-wrapper .settings-form input,
+.settings-form-wrapper .settings-form textarea {
+  margin: 5%;
+  padding: 5px;
+}
+
+.settings-form-wrapper .settings-form .input-container:nth-of-type(1) input,
+.settings-form-wrapper .settings-form .input-container:nth-of-type(2) input,
+.settings-form-wrapper .settings-form .input-container:nth-of-type(3) input,
+.settings-form-wrapper .settings-form .input-container:nth-of-type(4) input,
+.settings-form-wrapper .settings-form .input-container:nth-of-type(5) textarea {
+  min-width: 30vw;
+  max-width: 100%;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid var(--font-color);
+  outline: none;
+  /* background: var(--form-field-color); */
+  background: transparent;
+  color: var(--font-color);
+}
+
+.settings-form-wrapper .settings-form .input-container input:-webkit-autofill,
+.settings-form-wrapper
+  .settings-form
+  .input-container
+  input:-webkit-autofill:hover,
+.settings-form-wrapper
+  .settings-form
+  .input-container
+  input:-webkit-autofill:focus,
+.settings-form-wrapper
+  .settings-form
+  .input-container
+  input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: var(--font-color);
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px transparent;
+}
+
+.settings-form-wrapper .settings-form .input-container:nth-of-type(1) input {
+  margin-bottom: 5%;
+}
+
+.settings-form-wrapper .settings-form .input-container:nth-of-type(2) input {
+  margin-bottom: 5%;
+}
+
+.settings-form-wrapper .settings-form .input-container:nth-of-type(3) input {
+  margin-bottom: 5%;
+}
+
+.settings-form-wrapper .settings-form .input-container:nth-of-type(4) input {
+  margin-bottom: 5%;
+}
+
+.settings-form-wrapper .settings-form .input-container:nth-of-type(5) textarea {
+  min-height: 175px;
+  margin-bottom: 10%;
+  resize: none;
+  overflow-y: auto;
+}
+
+.settings-form-wrapper .settings-form .link-container {
+  margin-bottom: 10%;
+}
+
+.settings-form-wrapper .settings-form .button-container input,
+.settings-form-wrapper .settings-form .button-container button {
+  margin-bottom: 15%;
+  padding: 14px;
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.settings-form-wrapper .settings-form .button-container input {
+  background: var(--form-btn-color);
+  color: var(--font-color);
+}
+
+.settings-form-wrapper .settings-form .button-container button {
+  background: var(--form-del-btn-color);
+  color: var(--font-dark-color);
+}
+
+.settings-form-wrapper .settings-form .button-container input:hover,
+.settings-form-wrapper .settings-form .button-container button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.settings-form-wrapper .settings-form .button-container .acc-del-ops {
+  margin: 0 20px 15%;
+}
+
+.settings-form-wrapper
+  .settings-form
+  .button-container
+  .acc-del-ops:nth-of-type(1) {
+  background: var(--form-confirm-btn-color);
+}
+
+.settings-form-wrapper
+  .settings-form
+  .button-container
+  .acc-del-ops:nth-of-type(2) {
+  background: var(--form-del-btn-color);
+}
+
+@media (max-width: 968px) {
+  .settings-form-wrapper .settings-form {
+    width: 80%;
+    margin: 20% 0 5%;
+    padding: 15% 5%;
+  }
+  .settings-form-wrapper .settings-form .input-container {
+    margin: 0;
+    padding: 5px;
+  }
+  .settings-form-wrapper .login-form input {
+    margin: 5%;
+    padding: 5px;
+  }
+  .settings-form-wrapper .settings-form .input-container:nth-of-type(1) input {
+    width: 50vw;
+  }
+  .settings-form-wrapper .settings-form .input-container:nth-of-type(2) input {
+    width: 50vw;
+  }
+  .settings-form-wrapper .settings-form .input-container:nth-of-type(3) input {
+    width: 50vw;
+  }
+  .settings-form-wrapper .settings-form .input-container:nth-of-type(4) input {
+    width: 50vw;
+  }
+  .settings-form-wrapper
+    .settings-form
+    .input-container:nth-of-type(5)
+    textarea {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .settings-form-wrapper .settings-form {
+    width: 90%;
+    margin: 28% 0 5%;
+    padding: 10% 5%;
+  }
+}

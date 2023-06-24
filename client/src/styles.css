@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: #00215e;
+  --home-color: #003ebb;
+  --login-color: #003296;
+  --form-color: #001b50;
+  --form-field-color: #001b50;
+  --form-btn-color: #003aae;
+  --form-del-btn-color: #ff3b3b;
+  --form-confirm-btn-color: #27ff4f;
+  --footer-color: #000000;
+  --project-card-color: #010101;
+
+  --nav-color: #001c3c;
+  --nav-drawer-color: #004088f8;
+  --nav-link-color: #32f5ff;
+  --nav-link-2-color: #00caff;
+
+  --header-link-color: #54ff32;
+  --header-link-2-color: #ffdd00;
+  --header-link-bg-color: #00b7ff;
+
+  --docs-panel-color: #007cc3;
+  --docs-panel-container-color: #1d39b6;
+  --docs-panel-container-shadow: #0f0f0f;
+  --docs-card-color: #2e2e2e;
+  --docs-card-shadow: #2f2f2f;
+  --load-more-btn-color: #28ff8c;
+  --doc-edit-btn-color: rgb(0, 195, 68);
+  --doc-delete-btn-color: rgb(255, 79, 63);
+
+  --border-color: #fff;
+  --font-color: #fff;
+  --font-dark-color: #000;
+  --font-header-color: #ffffff;
+  --special-font-color: #00d0ff;
+  --special-font-2-color: #00ddee;
+  --special-font-3-color: #ff3b79;
+  --special-font-4-color: #00ff99;
+  --special-font-5-color: #00eaff;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0016a7 #009deb;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #009deb;
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: #00afc2;
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: #00b5c2;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #0016a7;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #003ca3;
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: #0067a3;
+}
+
+body {
+  background: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}

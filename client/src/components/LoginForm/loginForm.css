@@ -1,0 +1,115 @@
+.login-form-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://wallpapercave.com/wp/wp10432099.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form-wrapper .login-form {
+  height: 65vh;
+  /* margin-top: 2.5%; */
+  padding: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--form-color);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+  border-radius: 20px;
+}
+
+.login-form-wrapper .login-form .error-msg {
+  margin-bottom: 5%;
+  padding: 10px;
+  color: var(--font-color);
+  font-size: 14px;
+}
+
+.login-form-wrapper .login-form h1 {
+  margin-bottom: 10%;
+  padding: 10px;
+  color: var(--font-color);
+  font-size: 36px;
+  border-bottom: 5px solid var(--font-color);
+}
+
+.login-form-wrapper .login-form input {
+  margin: 5%;
+  padding: 5px;
+}
+
+.login-form-wrapper .login-form input:-webkit-autofill,
+.login-form-wrapper .login-form input:-webkit-autofill:hover,
+.login-form-wrapper .login-form input:-webkit-autofill:focus,
+.login-form-wrapper .login-form input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: var(--font-color);
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px transparent;
+}
+
+.login-form-wrapper .login-form .input-container:nth-of-type(1) input,
+.login-form-wrapper .login-form .input-container:nth-of-type(2) input {
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid var(--font-color);
+  outline: none;
+  background: var(--form-field-color);
+  color: var(--font-color);
+}
+
+.login-form-wrapper .login-form .input-container:nth-of-type(2) input {
+  margin-bottom: 20%;
+}
+
+.login-form-wrapper .login-form .link-container {
+  margin-bottom: 10%;
+}
+
+.login-form-wrapper .login-form .link-container .forgot-password {
+  color: var(--font-color);
+  display: inline-flex;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form-wrapper .login-form .link-container .forgot-password:hover {
+  transform: scale(1.1);
+}
+
+.login-form-wrapper .login-form .button-container input {
+  padding: 14px;
+  border: none;
+  background: var(--form-btn-color);
+  color: var(--font-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form-wrapper .login-form .button-container input:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+@media (max-width: 968px) {
+  .login-form-wrapper .login-form {
+    padding: 20%;
+  }
+  .login-form-wrapper .login-form .input-container {
+    margin: 0;
+    padding: 5px;
+  }
+  .login-form-wrapper .login-form input {
+    margin: 5%;
+    padding: 5px;
+  }
+}

@@ -1,0 +1,214 @@
+.individual-doc-panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://wallpapercave.com/wp/wp11834609.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.individual-doc-panel-wrapper {
+  width: 100%;
+  min-height: 80vh;
+  margin: 105px;
+  padding: 3%;
+  max-width: 968px;
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  flex-direction: row;
+  background: var(--docs-panel-container-color);
+  box-shadow: 1px 2px 3px 1px var(--docs-panel-container-shadow);
+  color: var(--font-color);
+}
+
+.individual-doc-panel-details {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.individual-doc-panel-details hr {
+  width: 55%;
+  margin: 2% 0 3%;
+  padding: 1px;
+  background: var(--font-color);
+}
+
+.individual-doc-name-editor {
+  /* min-width: 30vw; */
+  width: 250px;
+  /* max-width: 100%; */
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 26px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid var(--font-color);
+  outline: none;
+  background: transparent;
+  color: var(--font-color);
+}
+
+.individual-doc-type-editor {
+  width: 100px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid var(--font-color);
+  outline: none;
+  background: transparent;
+  color: var(--font-color);
+}
+
+.individual-doc-panel-details-mid {
+  width: 100%;
+  margin: 10% 5% 10%;
+  font-size: 14px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.individual-doc-ops .individual-doc-edit-msg,
+.individual-doc-ops .individual-doc-delete-msg {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.individual-doc-ops .individual-doc-edit-msg {
+  color: var(--doc-edit-btn-color);
+}
+
+.individual-doc-ops .individual-doc-delete-msg {
+  color: var(--doc-delete-btn-color);
+}
+
+.individual-doc-panel-details-mid h3 {
+  margin: 0 1%;
+}
+
+.individual-doc-panel-details-mid.ops-panel {
+  width: 40%;
+  margin: 10px 0 0;
+  padding: 3px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.individual-doc-panel-details-mid.ops-panel i {
+  font-size: 24px;
+}
+
+.individual-doc-panel-details-mid.ops-panel .individual-doc-edit-btn i,
+.individual-doc-panel-details-mid.ops-panel .individual-doc-edit-submit-btn i {
+  color: var(--doc-edit-btn-color);
+}
+
+.individual-doc-panel-details-mid.ops-panel .individual-doc-delete-btn i,
+.individual-doc-panel-details-mid.ops-panel .individual-doc-edit-cancel-btn i {
+  color: var(--doc-delete-btn-color);
+}
+
+.individual-doc-detail {
+  color: cyan;
+}
+
+.individual-doc-detail span {
+  font-weight: 400;
+  color: var(--font-color);
+}
+
+.individual-doc-edit-btn,
+.individual-doc-edit-submit-btn,
+.individual-doc-delete-btn,
+.individual-doc-edit-cancel-btn {
+  width: 65px;
+  height: 40px;
+  margin: 10px;
+  padding: 5px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 15px;
+  transition: all 0.2s ease-in-out;
+}
+
+.individual-doc-edit-btn,
+.individual-doc-edit-submit-btn {
+  /* background: var(--doc-edit-btn-color); */
+  color: var(--font-color);
+}
+
+.individual-doc-delete-btn,
+.individual-doc-edit-cancel-btn {
+  /* background: var(--doc-delete-btn-color); */
+  color: var(--font-color);
+}
+
+.individual-doc-edit-btn:hover,
+.individual-doc-edit-submit-btn:hover,
+.individual-doc-edit-cancel-btn:hover,
+.individual-doc-delete-btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.individual-doc-content-panel {
+  width: 90%;
+  height: 50vh;
+  background: var(--docs-card-color);
+  box-shadow: 0 0 2px 1px var(--docs-panel-container-shadow) inset;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.individual-doc-content,
+.individual-doc-content-editor {
+  width: 100%;
+  padding: 0 5% 5%;
+  background: var(--docs-card-color);
+  font-size: 18px;
+  text-align: left;
+  resize: none;
+  white-space: pre-line;
+}
+
+.individual-doc-content-editor {
+  height: 100%;
+  border: none;
+  outline: none;
+  color: var(--font-color);
+  resize: none;
+}
+
+@media (max-width: 968px) {
+  .individual-doc-panel-wrapper {
+    width: 100%;
+    margin: 105px 30px;
+    padding: 1%;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .individual-doc-panel-details-mid {
+    margin: 2% 0 1%;
+    flex-direction: column;
+  }
+  .individual-doc-panel-details-mid.ops-panel {
+    flex-direction: row;
+  }
+  .individual-doc-content {
+    margin-bottom: 30px;
+  }
+}
