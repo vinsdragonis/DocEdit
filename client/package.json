@@ -9,7 +9,7 @@
     "axios": "^1.8.4",
     "dotenv": "^16.4.7",
     "generate-unique-id": "^2.0.3",
-    "http-proxy-middleware": "^3.0.3",
+    "http-proxy-middleware": "^3.0.4",
     "jshint": "^2.13.6",
     "loader-utils": "^3.3.1",
     "react": "^19.1.0",
