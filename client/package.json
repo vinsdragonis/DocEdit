@@ -8,7 +8,7 @@
     "@testing-library/user-event": "^14.6.1",
     "axios": "^1.15.2",
     "dotenv": "^17.4.2",
-    "generate-unique-id": "^2.0.3",
+    "generate-unique-id": "^2.0.4",
     "http-proxy-middleware": "^3.0.4",
     "jshint": "^2.13.6",
     "loader-utils": "^3.3.1",
